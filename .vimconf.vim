@@ -24,11 +24,11 @@ vnoremap d "_d
 
 
 "Close tabs with Ctrl+W
-nnoremap <C-w> :bd<CR>
+nmap <C-w> :bd<CR>
 
 
 "Move through buffers with Tab
-nnoremap <silent> <TAB> :bnext<CR
+nmap <silent> <TAB> :bnext<CR>
 
 
 " copy, cut and paste

@@ -1,0 +1,8 @@
+alias ll='ls-al'
+alias update='sudo apt-fast update'
+alias upgrade='sudo apt-fast upgrade'
+alias install='sudo apt-fast install'
+alias python='python3' 
+alias update-grub='sudo update-grub'
+alias v='nvim' 
+alias ll='ls -al'

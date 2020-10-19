@@ -1,0 +1,26 @@
+set encoding=utf-8
+let g:mapleader = ','
+set number
+set mouse=a
+set numberwidth=1
+set clipboard=unnamedplus
+syntax enable
+set ruler
+set showmatch
+set splitbelow splitright
+set nobackup
+set nowritebackup
+let g:pymode_python = 'python3'
+let g:neomake_python_python_exe = 'python3'
+let g:python3_host_prog = expand("/usr/bin/python3")
+let g:gruvbox_contrast_dark = "hard"
+let g:closetag_filetypes = 'html,xhtml,phtml,xml'
+
+"Bash Language server
+let g:LanguageClient_serverCommands = {
+    \ 'sh': ['bash-language-server', 'start']
+    \ }
+
+
+"Change Wakatime to python3
+let g:wakatime_PythonBinary = '/usr/bin/python3'

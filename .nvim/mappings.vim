@@ -27,10 +27,10 @@ vmap <C-v> c<ESC>"+p
 imap <C-v> <ESC>"+pa
 
 "Resize splits
-noremap <silent> <M-Left> :vertical resize +3 <CR>
-noremap <silent> <M-Right> :vertical resize -3 <CR>
-noremap <silent> <M-Up> :resize +3 <CR>
-noremap <silent> <M-Down> :resize -3 <CR>
+noremap <silent> <C-M-Left> :vertical resize +3 <CR>
+noremap <silent> <C-M-Right> :vertical resize -3 <CR>
+noremap <silent> <C-M-Up> :resize +3 <CR>
+noremap <silent> <C-M-Down> :resize -3 <CR>
 
 "Change orientation of splits 
 map <Leader>th <C-w>t<C-w>H

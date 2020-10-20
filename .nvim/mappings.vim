@@ -42,9 +42,8 @@ nnoremap <silent> <C-s> :w<CR>
 "Disable sq don't know what it's for
 nnoremap sq <Nop>
 
-"Exit saving changes Ctrl+s+q
+"Exit saving changes Ctrl+s+q  "Not really needed same as ZZ
 nnoremap <silent> <C-s>q :wq<CR>
-
 "Trigger autocomplete with Ctrl+Space
 inoremap <silent><expr> <c-space> coc#refresh()
 
@@ -52,7 +51,7 @@ inoremap <silent><expr> <c-space> coc#refresh()
 vnoremap < <gv
 vnoremap > >gv
 
-"Exit with qq
+"Exit with qq 
 noremap qq :q<CR>
 
 

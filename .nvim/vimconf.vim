@@ -17,6 +17,9 @@ let g:gruvbox_contrast_dark = "hard"
 let g:closetag_filetypes = 'html,xhtml,phtml,xml'
 let g:spacevim_enable_tabline_filetype_icon = 1
 let g:spacevim_enable_os_fileformat_icon = 1
+let g:rainbow_active = 1
+let g:rnvimr_ex_enable = 1
+
 "Bash Language server
 let g:LanguageClient_serverCommands = {
     \ 'sh': ['bash-language-server', 'start']

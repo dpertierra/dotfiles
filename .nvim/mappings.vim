@@ -6,7 +6,8 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 nnoremap d "_d
 nnoremap D "_D
 vnoremap d "_d
-
+nnoremap x "_x
+nnoremap X "_X
 
 "Close tabs with Ctrl+W
 nmap <C-w> :bd<CR>
@@ -54,4 +55,6 @@ vnoremap > >gv
 "Exit with qq 
 noremap qq :q<CR>
 
+"Ranger file explorer
+nmap <space>r :RnvimrToggle<CR>
 

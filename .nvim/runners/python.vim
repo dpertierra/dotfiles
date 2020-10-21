@@ -1,1 +1,5 @@
-nnoremap <F8> :!python3 %<CR>
+set shiftwidth=4 tabstop=4 softtabstop=4 expandtab=4 autoindent smartindent
+setlocal path=src/**,tests,bin/**
+setlocal wildignore=*/__pycache__/*,*.pyc1
+setlocal include=^\\s*import
+setlocal define=^\\s*\\<\\(def\\\|class\\)\\>

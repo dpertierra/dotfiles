@@ -1,7 +1,7 @@
 set encoding=utf-8
 let g:mapleader = ','
 set number
-" set mouse=a
+set mouse=a
 set numberwidth=1
 set clipboard=unnamedplus
 syntax enable
@@ -10,6 +10,8 @@ set showmatch
 set splitbelow splitright
 set nobackup
 set nowritebackup
+set backspace=indent,eol,start
+set path=.,**
 let g:pymode_python = 'python3'
 let g:neomake_python_python_exe = 'python3'
 let g:python3_host_prog = expand("/usr/bin/python3")

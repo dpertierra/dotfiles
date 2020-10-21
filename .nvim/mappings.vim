@@ -1,5 +1,6 @@
 " Explorer
 nmap <space>e :CocCommand explorer<CR>
+nmap <F3> :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
 "dd deletes line instead of copy
@@ -14,8 +15,7 @@ nmap <C-w> :bd<CR>
 
 
 "Move through buffers with Tab
-nnoremap <silent> <TAB> :bnext<CR>
-nnoremap <silent> <S-TAB> :bprev<CR>
+nnoremap <silent> <C-Tab> :bnext<CR>
 
 "Nerd commenter
 nmap <Leader>ñ <Space>cl
@@ -43,8 +43,6 @@ nnoremap <silent> <C-s> :w<CR>
 "Disable sq don't know what it's for
 nnoremap sq <Nop>
 
-"Exit saving changes Ctrl+s+q  "Not really needed same as ZZ
-nnoremap <silent> <C-s>q :wq<CR>
 "Trigger autocomplete with Ctrl+Space
 inoremap <silent><expr> <c-space> coc#refresh()
 

@@ -3,12 +3,15 @@ nmap <space>e :CocCommand explorer<CR>
 nmap <F3> :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
-"dd deletes line instead of copy
+
+"dd deletes line instead of cut
 nnoremap d "_d
-nnoremap D "_D
 vnoremap d "_d
 nnoremap x "_x
 nnoremap X "_X
+vnoremap D "dd
+nnoremap D "dd
+
 
 "Close tabs with Ctrl+W
 nmap <C-w> :bd<CR>
@@ -33,7 +36,7 @@ noremap <silent> <C-M-Right> :vertical resize -3 <CR>
 noremap <silent> <C-M-Up> :resize +3 <CR>
 noremap <silent> <C-M-Down> :resize -3 <CR>
 
-"Change orientation of splits 
+"Change orientation of splits
 map <Leader>th <C-w>t<C-w>H
 map <Leader>tk <C-w>t<C-w>K
 
@@ -50,9 +53,11 @@ inoremap <silent><expr> <c-space> coc#refresh()
 vnoremap < <gv
 vnoremap > >gv
 
-"Exit with qq 
+"Exit with qq
 noremap qq :q<CR>
 
 "Ranger file explorer
 nmap <space>r :RnvimrToggle<CR>
+
+
 

@@ -12,6 +12,8 @@ nnoremap X "_X
 vnoremap D "dd
 nnoremap D "dd
 
+"Ctrl+A Select All
+nnoremap <C-A> ggVG
 
 "Close tabs with Ctrl+W
 nmap <C-w> :bd<CR>

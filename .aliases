@@ -1,4 +1,4 @@
-alias ll='ls-al'
+alias ll='ls -al'
 alias update='sudo apt-fast update'
 alias upgrade='sudo apt-fast upgrade'
 alias install='sudo apt-fast install'

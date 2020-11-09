@@ -29,8 +29,8 @@ vmap <Leader>ñ <Space>cl
 " copy, cut and paste
 vmap <C-c> "+y
 vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <ESC>"+pa
+vmap <C-v> <ESC>"p
+imap <C-v> <ESC>"pa
 
 "Resize splits
 noremap <silent> <C-M-Left> :vertical resize +3 <CR>

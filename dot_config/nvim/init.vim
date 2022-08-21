@@ -12,8 +12,17 @@ set spelllang=en,es  " Corregir palabras usando diccionarios en inglés y españ
 
 "UI
 set termguicolors  " Activa true colors en la terminal
-"set background=dark  " Fondo del tema: light o dark
-"colorscheme zellner  " Nombre del tema
+let g:onedark_config = {
+    \ 'style': 'cool',
+\}
 
 "Chezmoi
 autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
+
+
+"VIM-Plug
+call plug#begin()
+Plug 'navarasu/onedark.nvim'
+call plug#end()
+
+colorscheme onedark

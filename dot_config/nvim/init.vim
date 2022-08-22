@@ -1,28 +1,23 @@
-set number
-set title
-set mouse=a
-set cursorline
+" General Settings
+source $HOME/.config/nvim/general/settings.vim
 
-" Indentación a 2 espacios
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+" Plugins
+source $HOME/.config/nvim/vim-plug/plugins.vim
 
-set spelllang=en,es  " Corregir palabras usando diccionarios en inglés y español
+" Plugins Config
+source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plug-config/signify.vim
+source $HOME/.config/nvim/plug-config/quickscope.vim
 
-"UI
-set termguicolors  " Activa true colors en la terminal
-let g:onedark_config = {
-    \ 'style': 'cool',
-\}
+" Themes
+source $HOME/.config/nvim/themes/onedark.vim
+source $HOME/.config/nvim/themes/airline.vim
+" Keys
+source $HOME/.config/nvim/keys/mappings.vim
+source $HOME/.config/nvim/keys/which-key.vim
 
+lua require'plug-colorizer'
 "Chezmoi
 autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
 
 
-"VIM-Plug
-call plug#begin()
-Plug 'navarasu/onedark.nvim'
-call plug#end()
-
-colorscheme onedark

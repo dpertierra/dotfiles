@@ -550,7 +550,7 @@ lazyg() {
 }
 
 source $HOME/.aliases
-
+source ~/.local/share/blesh/ble.sh
 #######################################################
 # Set the ultimate amazing command prompt
 #######################################################

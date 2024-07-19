@@ -1,5 +1,5 @@
 #!/bin/bash
-[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
+#[[ $- == *i* ]] && source ~/.local/share/blesh/ble.sh --noattach
 iatest=$(expr index "$-" i)
 
 #######################################################
@@ -565,5 +565,5 @@ export PATH=$PATH:"$HOME/.local/bin:$HOME/.cargo/bin:/var/lib/flatpak/exports/bi
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
 eval "$(thefuck --alias)"
-[[ ${BLE_VERSION-} ]] && ble-attach
+#[[ ${BLE_VERSION-} ]] && ble-attach
 eval "$(atuin init bash)"

@@ -1,0 +1,16 @@
+configuration {
+  display-drun: "Apps";
+  display-window: "Windows";
+  display-filebrowser: "Files";
+  drun-display-format: "{icon} {name}";
+  font: "Meslo LGS Nerd Font Mono";
+  modes: [ drun, window, run, filebrowser ];
+  //combi-modes: [ drun, window, run, filebrowser ];
+  show-icons: true;
+}
+
+//@theme "Arc-Dark"
+*{ background-color : transparent; }
+
+
+@theme "/usr/share/rofi/themes/Dracula.rasi"
